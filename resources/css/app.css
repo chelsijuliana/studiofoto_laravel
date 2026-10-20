@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400&family=Instrument+Serif:ital,wght@0,400;1,400&family=Inter:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+@import './design-tokens.css';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../../resources/views/**/*.blade.php';
+
+@theme {
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+    
+    /* Font fallbacks for proprietary fonts from DESIGN.md */
+    --font-display-xxl: 'Domaine Display', 'Instrument Serif', Georgia, serif;
+    --font-display-xl: 'Domaine Display', 'Instrument Serif', Georgia, serif;
+    --font-display-lg: 'ABC Favorit', 'Inter', sans-serif;
+    --font-subtitle: 'ABC Favorit', 'Inter', sans-serif;
+    --font-body-md: 'ABC Favorit', 'Inter', sans-serif;
+    --font-button-sm: 'ABC Favorit', 'Inter', sans-serif;
+}
+
+@utility no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
